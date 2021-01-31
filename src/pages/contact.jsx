@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
+import ContactForm from '../components/Contact/ContactForm';
 
 const query = graphql`
   query {
@@ -22,6 +23,7 @@ const Contact = () => {
   return (
     <Layout>
       <StyledHero img={connectBcg.childImageSharp.fluid} />
+      <ContactForm />
     </Layout>
   );
 };
