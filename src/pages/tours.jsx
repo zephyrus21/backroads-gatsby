@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
+import ToursComponent from '../components/Tours/Tours';
 
 const query = graphql`
   query {
@@ -22,6 +23,7 @@ const Tours = () => {
   return (
     <Layout>
       <StyledHero img={defaultBcg.childImageSharp.fluid} />
+      <ToursComponent />
     </Layout>
   );
 };
