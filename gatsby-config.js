@@ -7,11 +7,14 @@ module.exports = {
     title: 'BackRoads',
     description: 'Explore awesome tours package',
     author: '@piyush',
+    twitterUsername: '@zephyrus_io',
+    siteUrl: 'https://backroads-p21.netlify.app',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
