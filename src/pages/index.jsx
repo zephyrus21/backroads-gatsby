@@ -8,6 +8,8 @@ import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 import FeaturedTours from '../components/Home/FeaturedTours';
 
+import SEO from '../components/SEO';
+
 const query = graphql`
   query {
     defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
@@ -24,6 +26,7 @@ const Home = () => {
   const { defaultBcg } = useStaticQuery(query);
   return (
     <Layout>
+      <SEO title="Backroads" description="home description" />
       <StyledHero home="true" img={defaultBcg.childImageSharp.fluid}>
         <Banner
           title="continue exploring"
